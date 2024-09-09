@@ -159,7 +159,7 @@ ul #language {
     margin-top: 5%;
 }
 
-.content .text button {
+.btn {
     width: 150px;
     height: 40px;
     margin-top: 5%;
@@ -241,17 +241,17 @@ a {
     margin-left: 20px;
 }
 
-.about-me .text {
+.about-me .about-me-text {
     width: 90%;
 }
 
-.about-me .text p {
-    margin: 0;
+.about-me .about-me-text p {
+    color: #ABB2BF;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
 .about-me .absolute {
     right: -13.5%;
     top: 0;
-    overflow-x: hidden !important;
 }
