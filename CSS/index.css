@@ -47,15 +47,21 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     height: 70px;
     width: 100%;
+    background: #282C33;
+    z-index: 9999999;
+}
+
+#navbar-row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    background: #282C33;
-    z-index: 9999999;
+    width: 100%;
+    height: 100%;
 }
 
 .line-and-links {
@@ -182,65 +188,19 @@ ul #language {
     }
 }
 
-@media screen and (max-width: 1050px) {
-    #hero {
-        flex-direction: column;
-        margin-top: 150px;
-    }
+.content #hero {
+    width: 100%;
 }
 
-@media screen and (max-width: 850px) {
-    .line-and-links {
-        display: none;
-    }
-
-    .content {
-        margin-top: 10%;
-        margin-left: 7%;
-        margin-right: 4%;
-    }
-
-    #profile {
-        margin-left: 7%;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .mobile-nav {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: flex-end;
-        background-color: #282C33;
-        z-index: 9999999;
-        width: 50px;
-        margin-right: 5%;
-
-        .line-one {
-            width: 100%;
-            height: 1px;
-            background-color: white;
-            margin-bottom: 10px;
-        }
-
-        .line-two {
-            width: 70%;
-            height: 1px;
-            background-color: white;
-        }
-    }
-}
-
-.content .row .img {
+.content #hero .img {
     position: relative;
+    width: 60%;
 }
 
 .content .img .picture {
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .content .img .dots {
@@ -325,6 +285,10 @@ a {
     }
 }
 
+#projects-title .hash {
+    font-size: 35px;
+}
+
 .view-all {
     font-size: 16px;
     margin-right: 2%;
@@ -389,7 +353,126 @@ a {
     left: -17%;
 }
 
+@media screen and (max-width: 1050px) {
+    #hero {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+}
+
 @media screen and (max-width: 850px) {
+    .line-and-links {
+        display: none;
+    }
+
+    .content {
+        margin-top: 10%;
+        margin-left: 7%;
+        margin-right: 4%;
+    }
+
+    #profile {
+        margin-left: 7%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        background-color: #282C33;
+        z-index: 9999999;
+        width: 50px;
+        margin-right: 5%;
+
+        .line-one {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+        .line-two {
+            width: 70%;
+            height: 1px;
+            background-color: white;
+        }
+    }
+
+    #hero {
+        margin-top: 130px;
+    }
+
+    #hero .text {
+        margin-right: 0;
+        text-align: center;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    #hero .img {
+        margin-top: 40px;
+        width: 90%;
+
+        .logo {
+            width: 90%;
+            top: 15px;
+            left: 10px;
+        }
+
+        .dots {
+            display: none;
+        }
+
+        .currently-working {
+            width: 80%;
+            left: 27px;
+
+            .square {
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+            }
+
+            p {
+                font-size: 12px;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .content .about-me {
+        margin-top: 100px;
+    }
+
+    .content .about-me .row p,
+    a {
+        font-size: 20px;
+    }
+
+    .about-me .about-me-text p {
+        font-size: 12px;
+    }
+
+    .about-me .absolute {
+        top: 150px;
+    }
+
+    .projects {
+        margin-top: 100px;
+    }
+
     .projects #projects-title {
         flex-direction: column;
         justify-content: flex-start;
@@ -397,6 +480,10 @@ a {
 
         .view-all {
             display: none;
+        }
+
+        .hash {
+            font-size: 20px;
         }
     }
 
