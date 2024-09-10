@@ -30,7 +30,6 @@ a {
 
 body {
     background-color: #282C33;
-    margin: 0 2px;
 }
 
 .row {
@@ -137,16 +136,20 @@ ul #language {
     text-decoration: none;
     position: relative;
     top: 0;
-    margin-left: 15%;
+    margin-left: 12%;
 
     &:hover {
         color: #ABB2BF;
     }
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .content {
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 12%;
     margin-right: 10%;
 }
 
@@ -176,6 +179,58 @@ ul #language {
     &:hover {
         background-color: rgb(199, 120, 221, 0.2);
         transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #hero {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .line-and-links {
+        display: none;
+    }
+
+    .content {
+        margin-top: 10%;
+        margin-left: 7%;
+        margin-right: 4%;
+    }
+
+    #profile {
+        margin-left: 7%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        background-color: #282C33;
+        z-index: 9999999;
+        width: 50px;
+        margin-right: 5%;
+
+        .line-one {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+        .line-two {
+            width: 70%;
+            height: 1px;
+            background-color: white;
+        }
     }
 }
 
@@ -241,7 +296,7 @@ a {
 }
 
 .pink-line {
-    width: 300px;
+    width: 50%;
     height: 1px;
     background-color: #C778DD;
     margin-left: 20px;
@@ -273,6 +328,13 @@ a {
 .view-all {
     font-size: 16px;
     margin-right: 2%;
+    text-wrap: nowrap;
+}
+
+.projects #all-projects {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 25px;
 }
 
 .one-project {
@@ -325,4 +387,27 @@ a {
 .projects .absolute {
     bottom: 30%;
     left: -17%;
+}
+
+@media screen and (max-width: 850px) {
+    .projects #projects-title {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .view-all {
+            display: none;
+        }
+    }
+
+    .projects #all-projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .one-project {
+            width: 80%;
+            margin-bottom: 50px;
+        }
+    }
 }
