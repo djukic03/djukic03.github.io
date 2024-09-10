@@ -366,6 +366,7 @@ a {
     }
 
     .content {
+        width: 100%;
         margin-top: 10%;
         margin-left: 7%;
         margin-right: 4%;
@@ -377,6 +378,10 @@ a {
 
     .nav {
         display: none;
+    }
+
+    .navbar {
+        width: 99%;
     }
 
     .mobile-nav {
@@ -411,6 +416,7 @@ a {
     #hero .text {
         margin-right: 0;
         text-align: center;
+        width: 100%;
 
         h2 {
             font-size: 16px;
@@ -421,14 +427,18 @@ a {
         }
     }
 
-    #hero .img {
+    .content #hero .img {
         margin-top: 40px;
-        width: 90%;
+        width: 80%;
 
         .logo {
             width: 90%;
             top: 15px;
             left: 10px;
+        }
+
+        .picture {
+            width: 100%;
         }
 
         .dots {
