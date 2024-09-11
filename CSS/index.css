@@ -36,8 +36,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .absolute {
@@ -112,9 +113,10 @@ ul li {
 .hash {
     color: #C778DD;
     font-weight: bold;
+    font-size: 35px;
 }
 
-ul li p {
+ul li .hash {
     font-size: 16px;
 }
 
@@ -285,8 +287,15 @@ a {
     }
 }
 
-#projects-title .hash {
-    font-size: 35px;
+#projects-title {
+
+    .hash {
+        font-size: 35px;
+    }
+
+    .pink-line {
+        width: 56%;
+    }
 }
 
 .view-all {
@@ -484,12 +493,13 @@ a {
     }
 
     .projects #projects-title {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+
+        .pink-line {
+            width: 40%;
+        }
 
         .view-all {
-            display: none;
+            font-size: 12px;
         }
 
         .hash {
@@ -506,5 +516,222 @@ a {
             width: 80%;
             margin-bottom: 50px;
         }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .projects #projects-title .pink-line {
+        display: none;
+    }
+}
+
+.skills-section {
+    position: relative;
+    width: 100%;
+    margin: 10% 0;
+
+    a:hover {
+        color: white;
+    }
+}
+
+.skills-section .animation {
+    position: relative;
+    width: 40%;
+    height: 350px;
+
+    .dots {
+        position: absolute;
+        width: 75px;
+        top: 16%;
+        left: 10%;
+    }
+
+    .rectangle {
+        position: absolute;
+        width: 100px;
+        top: 5%;
+        right: 16%;
+    }
+
+    .logo {
+        position: absolute;
+        width: 130px;
+        top: 60%;
+        left: 11%;
+    }
+
+    .dots2 {
+        position: absolute;
+        width: 68px;
+        top: 45%;
+        left: 45%;
+    }
+
+    .rectangle2 {
+        position: absolute;
+        width: 58px;
+        top: 70%;
+        right: 10%;
+    }
+}
+
+.skills-section .all-skills {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .skills-row {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .one-set {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border: 1px solid white;
+        margin-top: 8%;
+
+        .title {
+            width: 100%;
+            border-bottom: 1px solid white;
+
+            p {
+                font-size: 20px;
+                padding: 8px;
+                font-weight: 500;
+            }
+        }
+
+        .one-skill {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 5px;
+
+            p {
+                font-size: 16px;
+                padding: 3px 8px;
+                color: #ABB2BF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .skills-section .animation {
+        display: none;
+    }
+
+    .skills-section .all-skills {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        .skills-row {
+            width: 90%;
+        }
+    }
+}
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    margin: 10% 0;
+
+    a:hover {
+        color: white;
+    }
+}
+
+.contact-form {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    p {
+        color: #ABB2BF;
+        width: 70%;
+    }
+
+    form {
+        width: 70%;
+        margin: 3% 0;
+
+        .form-row {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .row input {
+                width: 47%;
+                height: 25px;
+                background-color: #282C33;
+                border: 1px solid #ABB2BF;
+                color: white;
+                padding: 1%;
+                font-family: 'FiraCode', monospace;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input {
+                width: 98%;
+                height: 25px;
+                background-color: #282C33;
+                border: 1px solid #ABB2BF;
+                color: white;
+                padding: 1%;
+                margin: 2% 0;
+                font-family: 'FiraCode', monospace;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            textarea {
+                width: 98%;
+                height: 100px;
+                background-color: #282C33;
+                border: 1px solid #ABB2BF;
+                color: white;
+                padding: 1%;
+                margin: 2% 0;
+                font-family: 'FiraCode', monospace;
+                resize: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
     }
 }
