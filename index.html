@@ -5,10 +5,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Nemanja Đukić</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/main.css">
     <link rel='stylesheet' type='text/css' media='screen' href='./CSS/index.css'>
 </head>
 <body>
-    <header class="navbar" style="width: 100%;">
+    <header class="navbar">
         <div class="row" id="navbar-row">
             <div class="line-and-links">
                 <div class="line"></div>
@@ -19,27 +20,56 @@
                 </div>
             </div>
             <a href="./index.html" id="profile">Nemanja Đukić</a>
-            <ul class="nav">
-                <li>
+            <ul class="desktop-nav">
+                <li class="nav-li">
                     <p class="hash">#</p><a href="./index.html">home</a>
                 </li>
-                <li>
+                <li class="nav-li">
                     <p class="hash">#</p><a href="./about.html">about_me</a>
                 </li>
-                <li>
+                <li class="nav-li">
                     <p class="hash">#</p><a href="./projects.html">my_projects</a>
                 </li>
-                <li>
+                <li class="nav-li">
                     <p class="hash">#</p><a href="./contact.html">contact_me</a>
                 </li>
-                <select name="language" id="language">
-                    <option value="0" selected style="color: white; background-color: #282C33;">EN</option>
-                    <option value="1" style="color: white; background-color: #282C33;">SR</option>
-                </select>
+                <li class="nav-li">
+                    <select name="language" class="language">
+                        <option value="0" selected style="color: white; background-color: #282C33;">EN</option>
+                        <option value="1" style="color: white; background-color: #282C33;">SR</option>
+                    </select>
+                </li>
             </ul>
             <div class="mobile-nav">
                 <div class="line-one"></div>
                 <div class="line-two"></div>
+            </div>
+        </div>
+        <div class="mobile-nav-container">
+            <ul class="mobile-nav-ul">
+                <li class="nav-li">
+                    <p class="hash">#</p><a href="./index.html">home</a>
+                </li>
+                <li class="nav-li">
+                    <p class="hash">#</p><a href="./about.html">about_me</a>
+                </li>
+                <li class="nav-li">
+                    <p class="hash">#</p><a href="./projects.html">my_projects</a>
+                </li>
+                <li class="nav-li">
+                    <p class="hash">#</p><a href="./contact.html">contact_me</a>
+                </li>
+                <li class="nav-li">
+                    <select name="language" class="language">
+                        <option value="0" selected style="color: white; background-color: #282C33;">EN</option>
+                        <option value="1" style="color: white; background-color: #282C33;">SR</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="mobile-links">
+                <a href="https://github.com/djukic03" target="_blank"><img src="./assets/icons/Github.svg"/></a>
+                <a href="https://www.linkedin.com/in/nemanja-đukić" target="_blank"><img src="./assets/icons/Linkedin.svg"/></a>
+                <a href="mailto:djukic.nemanja003@gmail.com" target="_blank"><img src="./assets/icons/Email.svg"/></a>
             </div>
         </div>
     </header>
