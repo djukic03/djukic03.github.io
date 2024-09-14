@@ -48,16 +48,16 @@
         <div class="mobile-nav-container">
             <ul class="mobile-nav-ul">
                 <li class="nav-li">
-                    <p class="hash">#</p><a href="./index.html">home</a>
+                    <p class="hash">#</p><a href="./index.html" class="home">home</a>
                 </li>
                 <li class="nav-li">
-                    <p class="hash">#</p><a href="./about.html">about_me</a>
+                    <p class="hash">#</p><a href="./about.html" class="about">about_me</a>
                 </li>
                 <li class="nav-li">
-                    <p class="hash">#</p><a href="./projects.html">my_projects</a>
+                    <p class="hash">#</p><a href="./projects.html" class="projects">my_projects</a>
                 </li>
                 <li class="nav-li">
-                    <p class="hash">#</p><a href="./contact.html">contact_me</a>
+                    <p class="hash">#</p><a href="./contact.html" class="contact">contact_me</a>
                 </li>
                 <li class="nav-li">
                     <select name="language" class="language">
@@ -76,9 +76,9 @@
     <main class="content">
         <div class="row" id="hero">
             <div class="text">
-                <h2>Hi! I'm Nemanja Đukić, an <strong style="color: #C778DD;">Information Technology student</strong> at the <strong style="color: #C778DD;">Faculty of Organizational Sciences</strong></h2>
-                <p>If you are looking for a motivated and dedicated employee who is eager to learn and grow professionally, please feel free to contact me.</p>
-                <a href="./contact.html"><button class="btn">Contact Me -></button></a>
+                <h2 id="text-h2">Hi! I'm Nemanja Đukić, an <strong id="it-student" style="color: #C778DD;">Information Technology student</strong> at the <strong id="faculty" style="color: #C778DD;">Faculty of Organizational Sciences</strong> in Belgrade</h2>
+                <p id="text-p">If you are looking for a motivated and dedicated employee who is eager to learn and grow professionally, please feel free to contact me.</p>
+                <a href="./contact.html"><button class="btn" id="btn-contact">Contact Me -></button></a>
             </div>
             <div class="img">
                 <img class="logo" src="./assets/img/Logo.png" alt="logo">
@@ -86,29 +86,30 @@
                 <img class="dots" src="./assets/img/Dots.png" alt="dots">
                 <div class="currently-working">
                     <div class="square"></div>
-                    <p>Currently working on <strong>Portfolio</strong></p>
+                    <p id="currently-working">Currently working on <strong>Portfolio</strong></p>
                 </div>
             </div>
         </div>
         <div class="about-me">
             <div class="row">
-                <p class="hash">#</p><a>about_me</a>
+                <p class="hash">#</p><a class="about">about_me</a>
                 <div class="pink-line"></div>
             </div>
             <div class="about-me-text">
-                <p>I am a motivated and dedicated student at the <strong style="color: #C778DD;">Faculty of Organizational Sciences, University of Belgrade</strong>, pursuing a degree in <strong style="color: #C778DD;">Information Systems and Technologies</strong>.</p>
-                <p>For <strong style="color: #C778DD;">nearly a decade</strong>, I have been continuously learning and developing my coding skills, which has provided me with a solid foundation in programming and a deep understanding of technology. My academic background also includes knowledge in management, economics, finance, project and product management, etc.</p>
-                <p>I am actively seeking an <strong style="color: #C778DD;">entry-level position in IT</strong>, where I can gain more <strong style="color: #C778DD;">practical experience </strong>and grow professionally in a collaborative and supportive environment. I am eager to contribute and learn from experienced mentors and colleagues.</p>
-                <a href="./about.html"><button class="btn">Read My CV -></button></a>
+                <p id="about-me-p1">I am a motivated and dedicated student at the <strong style="color: #C778DD;">Faculty of Organizational Sciences, University of Belgrade</strong>, pursuing a degree in <strong style="color: #C778DD;">Information Systems and Technologies</strong>.</p>
+                <p id="about-me-p2">For <strong style="color: #C778DD;">nearly a decade</strong>, I have been continuously learning and developing my coding skills, which has provided me with a solid foundation in programming and a deep understanding of technology. My academic background also includes knowledge in management, economics, finance, project and product management, etc.</p>
+                <p id="about-me-p3">I am actively seeking an <strong style="color: #C778DD;">entry-level position in IT</strong>, where I can gain more <strong style="color: #C778DD;">practical experience </strong>and grow professionally in a collaborative and supportive environment. I am eager to contribute and learn from experienced mentors and colleagues.</p>
+                <a href="./about.html"><button class="btn" id="read-cv">Read My CV -></button></a>
             </div>
             <div class="absolute">
                 <img class="rectangle" src="./assets/img/Rectangle.png" alt="rectangle">
             </div>
         </div>
-        <div class="projects">
+        <!-- CHANGE PROJECTS TO PROJECTS-SECTION -->
+        <div class="projects"> 
             <div class="row" id="projects-title" style="justify-content: space-between; width: 100%;">
                 <div class="row" style="width: 88%; justify-content: flex-start;">
-                    <p class="hash">#</p><a>projects</a>
+                    <p class="hash">#</p><a class="projects">projects</a>
                     <div class="pink-line"></div>
                 </div>
                 <a class="view-all" href="./projects.html">View all ~~></a>

@@ -4,8 +4,27 @@ LanguageSelect.addEventListener("change", function () {
   const selectedLang = this.value;
   const translation = translations[selectedLang];
 
-  document.querySelector(".home").textContent = translation.home;
-  document.querySelector(".about").textContent = translation.about;
+  document.querySelectorAll(".home").forEach((element) => {
+    element.innerHTML = translation.home;
+  });
+  document.querySelectorAll(".about").forEach((element) => {
+    element.innerHTML = translation.about;
+  });
+  document.querySelectorAll(".projects").forEach((element) => {
+    element.innerHTML = translation.projects;
+  });
+  document.querySelectorAll(".contact").forEach((element) => {
+    element.innerHTML = translation.contact;
+  });
+  document.querySelector("#text-h2").innerHTML = translation.text_h2;
+  document.querySelector("#text-p").innerHTML = translation.text_p;
+  document.querySelector("#btn-contact").innerHTML = translation.btn_contact;
+  document.querySelector("#currently-working").innerHTML =
+    translation.currently_working;
+  document.querySelector("#about-me-p1").innerHTML = translation.about_me_p1;
+  document.querySelector("#about-me-p2").innerHTML = translation.about_me_p2;
+  document.querySelector("#about-me-p3").innerHTML = translation.about_me_p3;
+  document.querySelector("#read-cv").innerHTML = translation.read_cv;
 });
 
 var MobileNav = document.querySelector(".mobile-nav");
