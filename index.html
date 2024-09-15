@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" media="screen" href="./CSS/main.css">
     <link rel='stylesheet' type='text/css' media='screen' href='./CSS/index.css'>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <header class="navbar">
@@ -28,7 +29,7 @@
                     <p class="hash">#</p><a href="./about.html" class="about">about_me</a>
                 </li>
                 <li class="nav-li">
-                    <p class="hash">#</p><a href="./projects.html" class="projects">my_projects</a>
+                    <p class="hash">#</p><a href="./projects.html" class="my-projects">my_projects</a>
                 </li>
                 <li class="nav-li">
                     <p class="hash">#</p><a href="./contact.html" class="contact">contact_me</a>
@@ -54,15 +55,15 @@
                     <p class="hash">#</p><a href="./about.html" class="about">about_me</a>
                 </li>
                 <li class="nav-li">
-                    <p class="hash">#</p><a href="./projects.html" class="projects">my_projects</a>
+                    <p class="hash">#</p><a href="./projects.html" class="my-projects">my_projects</a>
                 </li>
                 <li class="nav-li">
                     <p class="hash">#</p><a href="./contact.html" class="contact">contact_me</a>
                 </li>
                 <li class="nav-li">
                     <select name="language" class="language">
-                        <option value="0" selected style="color: white; background-color: #282C33;">EN</option>
-                        <option value="1" style="color: white; background-color: #282C33;">SR</option>
+                        <option value="en" selected style="color: white; background-color: #282C33;">EN</option>
+                        <option value="sr" style="color: white; background-color: #282C33;">SR</option>
                     </select>
                 </li>
             </ul>
@@ -98,18 +99,17 @@
             <div class="about-me-text">
                 <p id="about-me-p1">I am a motivated and dedicated student at the <strong style="color: #C778DD;">Faculty of Organizational Sciences, University of Belgrade</strong>, pursuing a degree in <strong style="color: #C778DD;">Information Systems and Technologies</strong>.</p>
                 <p id="about-me-p2">For <strong style="color: #C778DD;">nearly a decade</strong>, I have been continuously learning and developing my coding skills, which has provided me with a solid foundation in programming and a deep understanding of technology. My academic background also includes knowledge in management, economics, finance, project and product management, etc.</p>
-                <p id="about-me-p3">I am actively seeking an <strong style="color: #C778DD;">entry-level position in IT</strong>, where I can gain more <strong style="color: #C778DD;">practical experience </strong>and grow professionally in a collaborative and supportive environment. I am eager to contribute and learn from experienced mentors and colleagues.</p>
+                <p id="about-me-p3">I am actively seeking an <strong style="color: #C778DD;">internship</strong> or an <strong style="color: #C778DD;">entry-level position in IT</strong>, where I can gain more <strong style="color: #C778DD;">practical experience </strong>and grow professionally in a collaborative and supportive environment. I am eager to contribute and learn from experienced mentors and colleagues.</p>
                 <a href="./about.html"><button class="btn" id="read-cv">Read My CV -></button></a>
             </div>
             <div class="absolute">
                 <img class="rectangle" src="./assets/img/Rectangle.png" alt="rectangle">
             </div>
         </div>
-        <!-- CHANGE PROJECTS TO PROJECTS-SECTION -->
         <div class="projects"> 
             <div class="row" id="projects-title" style="justify-content: space-between; width: 100%;">
                 <div class="row" style="width: 88%; justify-content: flex-start;">
-                    <p class="hash">#</p><a class="projects">projects</a>
+                    <p class="hash">#</p><a class="my-projects">projects</a>
                     <div class="pink-line"></div>
                 </div>
                 <a class="view-all" href="./projects.html">View all ~~></a>
@@ -130,8 +130,8 @@
                     </div>
                     <div class="desc">
                         <p class="title">Athlete X</p>
-                        <p class="desc-text">Fitness tracking web application.</p>
-                        <a href="./projects.html"><button class="btn">View More -></button></a>
+                        <p class="desc-text" id="ath-x-desc">Fitness tracking web application.</p>
+                        <a href="./projects.html"><button class="btn view-more">View More -></button></a>
                     </div>
                 </div>
                 <div class="one-project">
@@ -146,9 +146,9 @@
                         </div>
                     </div>
                     <div class="desc">
-                        <p class="title">Đuka Music Assistant</p>
-                        <p class="desc-text">Voice-controled music assistant.</p>
-                        <a href="./projects.html"><button class="btn">View More -></button></a>
+                        <p class="title" id="djuka-title">Đuka Music Assistant</p>
+                        <p class="desc-text" id="djuka-desc">Voice-controled music assistant.</p>
+                        <a href="./projects.html"><button class="btn view-more">View More -></button></a>
                     </div>
                 </div>
                 <div class="one-project">
@@ -163,9 +163,9 @@
                         </div>
                     </div>
                     <div class="desc">
-                        <p class="title">My Portfolio Website</p>
-                        <p class="desc-text">A custom-made website built from scratch.</p>
-                        <a href="./projects.html"><button class="btn">View More -></button></a>
+                        <p class="title" id="portfolio-title">My Portfolio Website</p>
+                        <p class="desc-text" id="portfolio-desc">A custom-made website built from scratch.</p>
+                        <a href="./projects.html"><button class="btn view-more">View More -></button></a>
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@
         </div>
         <div class="skills-section">
             <div class="row" style="justify-content: flex-start;">
-                <p class="hash">#</p><a>skills</a>
+                <p class="hash">#</p><a class="my-skills">skills</a>
                 <div class="pink-line"></div>
             </div>
             <div class="row" style="align-items: flex-start;">
@@ -190,7 +190,7 @@
                     <div class="skills-row">
                         <div class="one-set">
                             <div class="title">
-                                <p>Software development</p>
+                                <p id="soft-dev">Software development</p>
                             </div>
                             <div class="one-skill">
                                 <p>Java</p>
@@ -202,7 +202,7 @@
                     <div class="skills-row">
                         <div class="one-set">
                             <div class="title">
-                                <p>Web development</p>
+                                <p id="web-dev">Web development</p>
                             </div>
                             <div class="one-skill">
                                 <p>HTML</p>
@@ -216,7 +216,7 @@
                         </div>
                         <div class="one-set">
                             <div class="title">
-                                <p>Databases</p>
+                                <p id="databases">Databases</p>
                             </div>
                             <div class="one-skill">
                                 <p>MySQL</p>
@@ -228,7 +228,7 @@
                     <div class="skills-row">
                         <div class="one-set">
                             <div class="title">
-                                <p>Tools</p>
+                                <p id="tools">Tools</p>
                             </div>
                             <div class="one-skill">
                                 <p>VSCode</p>
@@ -240,14 +240,14 @@
                         </div>
                         <div class="one-set">
                             <div class="title">
-                                <p>Management</p>
+                                <p id="management">Management</p>
                             </div>
                             <div class="one-skill">
-                                <p>Project management</p>
-                                <p>Product management</p>
-                                <p>Process engineering</p>
-                                <p>Economics</p>
-                                <p>Finance</p>
+                                <p id="pm">Project management</p>
+                                <p id="pdm">Product management</p>
+                                <p id="pe">Process engineering</p>
+                                <p id="e">Economics</p>
+                                <p id="f">Finance</p>
                             </div>
                         </div>
                     </div>
@@ -256,13 +256,13 @@
         </div>
         <div class="contact-section">
             <div class="row" style="justify-content: flex-start;">
-                <p class="hash">#</p><a>contact</a>
+                <p class="hash">#</p><a class="contact">contact</a>
                 <div class="pink-line"></div>
             </div>
             <div class="row" style="justify-content: space-between; width: 100%; height: 100%; align-items: flex-start;">
                 <div class="contact-form">
-                    <p>If you are interested in hiring me, please feel free to contact me.</p>
-                    <form action="">
+                    <p id="contact-text">If you are interested in hiring me, please feel free to contact me.</p>
+                    <form id="contact-form">
                         <div class="form-row">
                             <div class="row">
                                 <input type="text" name="name" id="name" placeholder="Name">
@@ -270,13 +270,13 @@
                             </div>
                             <input type="text" name="subject" id="subject" placeholder="Subject">
                             <textarea name="message" id="message" placeholder="Message"></textarea>
-                            <button class="btn" type="submit">Send</button>
+                            <button class="btn" id="send" type="submit">Send</button>
                         </div>
                     </form>
                 </div>
                 <div class="media-info">
                     <div class="media">
-                        <p style="font-weight: 600; margin-bottom: 20px;">Or contact me here</p>
+                        <p id="or-contact" style="font-weight: 600; margin-bottom: 20px;">Or contact me here</p>
                         <div class="row">
                             <img src="./assets/icons/Email.svg" alt="Email">
                             <p>djukic.nemanja003@gmail.com</p>
@@ -301,7 +301,7 @@
                     <p>Nemanja</p>
                     <a href="mailto:djukic.nemanja003@gmail.com" target="_blank">djukic.nemanja003@gmail.com</a>
                 </div>
-                <p style="margin-top: 10px;">IT student and a full-stack developer</p>
+                <p id="footer-text" style="margin-top: 10px;">IT student and a full-stack developer</p>
             </div>
             <div class="media">
                 <p>Media</p>

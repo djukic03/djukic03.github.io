@@ -246,7 +246,7 @@ body {
     }
 
     #profile {
-        margin-left: 7%;
+        margin-left: 5%;
     }
 
     .desktop-nav {
@@ -285,7 +285,7 @@ footer {
     position: relative;
     text-align: center;
     border-top: 1px solid #ABB2BF;
-    padding: 2% 18% 1% 12%;
+    padding: 2% 12% 1% 12%;
 
     .name {
         text-align: left;
@@ -438,7 +438,7 @@ footer {
 @media screen and (max-width: 850px) {
     .content {
         margin-top: 10%;
-        margin-left: 7%;
-        margin-right: 4%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
