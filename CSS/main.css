@@ -442,3 +442,13 @@ footer {
         margin-right: 5%;
     }
 }
+
+.page-title {
+    position: relative;
+    margin: 8% 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
