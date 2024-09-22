@@ -106,6 +106,16 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 5%;
+    opacity: 0;
+    transform-origin: center right;
+    transform: rotate(-90deg);
+    transition: opacity 1s ease, transform 0.7s ease;
+}
+
+.left-experience.visible {
+    opacity: 1;
+    transform-origin: center right;
+    transform: rotate(0deg);
 }
 
 .right-experience {
@@ -118,6 +128,10 @@
     align-items: center;
     margin-top: 5%;
     margin-left: 50%;
+    opacity: 0;
+    transform-origin: center left;
+    transform: rotate(90deg);
+    transition: opacity 1s ease, transform 0.7s ease;
 
     .white-circle {
         margin-right: 0;
@@ -128,6 +142,12 @@
         margin-left: 0;
         margin-right: 20%;
     }
+}
+
+.right-experience.visible {
+    opacity: 1;
+    transform-origin: center left;
+    transform: rotate(0deg);
 }
 
 .one-experience {
@@ -165,6 +185,25 @@
     width: 20px;
     height: 20px;
     margin-right: -10.8px;
+    transition: transform 1s ease;
+}
+
+.white-circle.visible {
+    animation: scaleEffect 1s ease;
+}
+
+@keyframes scaleEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 #edu-line {
