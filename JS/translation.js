@@ -9,7 +9,8 @@ export const translations = {
     text_p:
       "If you are looking for a motivated and dedicated employee who is eager to learn and grow professionally, please feel free to contact me.",
     btn_contact: "Contact Me ->",
-    currently_working: "Currently working on <strong>Portfolio</strong>",
+    currently_working:
+      "Currently working on my <strong>Bachelor's degree</strong>",
     about_me_p1: `I am a motivated and dedicated student at the <strong style="color: #C778DD;">Faculty of Organizational Sciences, University of Belgrade</strong>, pursuing a degree in <strong style="color: #C778DD;">Information Systems and Technologies</strong>.`,
     about_me_p2: `For <strong style="color: #C778DD;">nearly a decade</strong>, I have been continuously learning and developing my coding skills, which has provided me with a solid foundation in programming and a deep understanding of technology. My academic background also includes knowledge in management, economics, finance, project and product management, etc.`,
     about_me_p3: `I am actively seeking an <strong style="color: #C778DD;">internship</strong> or an <strong style="color: #C778DD;"> entry-level position in IT</strong>, where I can gain more <strong style="color: #C778DD;">practical experience </strong>and grow professionally in a collaborative and supportive environment. I am eager to contribute and learn from experienced mentors and colleagues.`,
@@ -55,7 +56,8 @@ export const translations = {
     text_p:
       "Ако тражите мотивисаног и посвећеног радника који је жељан да учи и професионално се развија, слободно ме контактирајте.",
     btn_contact: "Контакт ->",
-    currently_working: "Тренутно радим на <strong>Портфолију</strong>",
+    currently_working:
+      "Тренутно у процесу стицања <strong>дипломе основнних студија</strong>",
     about_me_p1: `Ја сам мотивисан и пожртвован студент на <strong style="color: #C778DD;">Факултету Организационих Наука, Универзитета у Београду</strong>, на смеру <strong style="color: #C778DD;">Информациони Системи и Технологије</strong>.`,
     about_me_p2: `Већ <strong style="color: #C778DD;">готово деценију</strong> континуирано учим и унапређујем своје вештине кодирања, што ми је омогућило да изградим чврсту основу у програмирању и разумевању информационих технологија. Моје академско образовање такође обухвата знања из области менаџмента, економије, финансија, управљања пројектима и производима, и сл.`,
     about_me_p3: `Тренутно тражим прилику за <strong style="color: #C778DD;">праксу</strong> или <strong style="color: #C778DD;">почетну позицију у IT сектору</strong> како бих стекао више <strong style="color: #C778DD;">практичног искуства</strong> и наставио да се професионално развијам учећи од искуснијих ментора и колега.`,
