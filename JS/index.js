@@ -1,4 +1,5 @@
 import { translations } from "./translation.js";
+import { config } from "./config.js";
 document.querySelectorAll(".language").forEach((element) => {
   element.addEventListener("change", function () {
     const selectedLang = this.value;
@@ -49,7 +50,7 @@ document.querySelectorAll(".language").forEach((element) => {
 
 (function () {
   emailjs.init({
-    publicKey: "e3-_HYVJTgu2CHAjU",
+    publicKey: config.EMAILJS_API_KEY,
   });
 })();
 
@@ -60,7 +61,10 @@ document
     emailjs.sendForm("contact_service", "contact_form", this).then(
       () => {
         alert("Email sent successfully");
-        document.getElementById("contactForm").reset();
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
       },
       (error) => {
         alert("Error sending email. Please try again later. \n", error);

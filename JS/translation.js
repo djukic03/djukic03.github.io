@@ -10,7 +10,7 @@ export const translations = {
       "If you are looking for a motivated and dedicated employee who is eager to learn and grow professionally, please feel free to contact me.",
     btn_contact: "Contact Me ->",
     currently_working:
-      "Currently working on my <strong>Bachelor's degree</strong>",
+      "Currently pursuing my <strong>Bachelor's degree</strong>",
     about_me_p1: `I am a motivated and dedicated student at the <strong style="color: #C778DD;">Faculty of Organizational Sciences, University of Belgrade</strong>, pursuing a degree in <strong style="color: #C778DD;">Information Systems and Technologies</strong>.`,
     about_me_p2: `For <strong style="color: #C778DD;">nearly a decade</strong>, I have been continuously learning and developing my coding skills, which has provided me with a solid foundation in programming and a deep understanding of technology. My academic background also includes knowledge in management, economics, finance, project and product management, etc.`,
     about_me_p3: `I am actively seeking an <strong style="color: #C778DD;">internship</strong> or an <strong style="color: #C778DD;"> entry-level position in IT</strong>, where I can gain more <strong style="color: #C778DD;">practical experience </strong>and grow professionally in a collaborative and supportive environment. I am eager to contribute and learn from experienced mentors and colleagues.`,
