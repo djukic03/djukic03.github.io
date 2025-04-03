@@ -1,7 +1,102 @@
-.content .row {
-    justify-content: flex-start;
+.page-title-container {
+    margin-bottom: 6%;
+
+    .page-title {
+        margin-bottom: 15px;
+
+        .page-desc {
+            font-size: 16px;
+            color: #ABB2BF;
+        }
+    }
+}
+
+.content {
+    margin-top: 8%;
+
+    .row {
+        justify-content: flex-start;
+    }
 }
 
 .projects {
     margin-bottom: 5%;
+}
+
+.projects {
+    position: relative;
+
+    a {
+        font-size: 35px;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+#projects-title {
+
+    .hash {
+        font-size: 35px;
+    }
+
+    .pink-line {
+        width: 33%;
+    }
+}
+
+.projects #all-projects {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.one-project {
+    border: 1px solid white;
+    width: 30%;
+    margin-right: 25px;
+}
+
+.one-project .img {
+    width: 100%;
+}
+
+.one-project .img img {
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.one-project .skills {
+    padding: 2%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid white;
+}
+
+.one-project .skills .row {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.one-project .skills p {
+    color: #ABB2BF;
+    padding: 1px 5px;
+}
+
+.one-project .desc {
+    padding: 5%;
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .desc-text {
+        color: #ABB2BF;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
 }
