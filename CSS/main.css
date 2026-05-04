@@ -81,6 +81,21 @@ body {
     margin-left: 20px;
 }
 
+.section-title {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.section-title .hash,
+.section-title a,
+.section-title h2 {
+    font-size: 35px;
+}
+
+.section-title a:hover {
+    color: white;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -260,9 +275,12 @@ body {
         justify-content: flex-start;
         align-items: flex-end;
         background-color: #282C33;
+        border: none;
+        cursor: pointer;
         z-index: 9999999;
         width: 50px;
         margin-right: 5%;
+        padding: 0;
 
         .line-one {
             width: 50px;
@@ -277,6 +295,18 @@ body {
             height: 1px;
             background-color: white;
             transition: transform 0.5s ease;
+        }
+    }
+
+    .mobile-nav.open {
+        .line-one {
+            transform: rotate(-45deg);
+            width: 35px;
+            margin-bottom: 0;
+        }
+
+        .line-two {
+            transform: rotate(45deg);
         }
     }
 }
@@ -440,6 +470,12 @@ footer {
         margin-top: 10%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .section-title .hash,
+    .section-title a,
+    .section-title h2 {
+        font-size: 20px;
     }
 }
 

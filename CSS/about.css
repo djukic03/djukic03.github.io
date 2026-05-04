@@ -63,7 +63,7 @@
     }
 }
 
-#exp-row {
+.exp-row {
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
@@ -74,7 +74,7 @@
     border-radius: 25px;
 }
 
-#exp-line-container {
+.exp-line-container {
     height: 100%;
     top: 0;
     left: 50%;
@@ -208,4 +208,44 @@
 
 #edu-line {
     height: 85%;
+}
+
+@media screen and (max-width: 850px) {
+    .cv {
+        margin-top: 80px;
+
+        .cv-line-1 {
+            width: 48%;
+        }
+
+        .cv-download {
+            width: 42%;
+
+            a {
+                width: 100%;
+            }
+
+            .btn {
+                font-size: 11px;
+            }
+        }
+
+        .cv-line-2 {
+            width: 6%;
+        }
+    }
+
+    .one-experience {
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+
+        .date {
+            right: 10px;
+        }
+    }
 }

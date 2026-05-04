@@ -3,15 +3,15 @@
 
     .page-title {
         margin-bottom: 15px;
-
-        .page-desc {
-            font-size: 16px;
-            color: #ABB2BF;
-        }
     }
 }
 
-.content {
+.page-title-container .page-desc {
+    font-size: 16px;
+    color: #ABB2BF;
+}
+
+.projects-page {
     margin-top: 8%;
 
     .row {
@@ -19,20 +19,24 @@
     }
 }
 
-.projects {
+.projects-page .projects {
     margin-bottom: 5%;
 }
 
-.projects {
+.projects-page .projects {
     position: relative;
+}
 
-    a {
-        font-size: 35px;
-    }
+.projects-page .projects .section-title {
+    margin-bottom: 0;
+}
 
-    a:hover {
-        color: white;
-    }
+.projects-page .projects > .row > a {
+    font-size: 35px;
+}
+
+.projects-page .projects > .row > a:hover {
+    color: white;
 }
 
 #projects-title {
@@ -46,47 +50,47 @@
     }
 }
 
-.projects #all-projects {
+.projects-page .projects .all-projects {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 25px;
 }
 
-.one-project {
+.projects-page .one-project {
     border: 1px solid white;
     width: 30%;
     margin-right: 25px;
     margin-bottom: 15px;
 }
 
-.one-project .img {
+.projects-page .one-project .img {
     width: 100%;
 }
 
-.one-project .img img {
+.projects-page .one-project .img img {
     width: 100%;
     border-bottom: 1px solid white;
 }
 
-.one-project .skills {
+.projects-page .one-project .skills {
     padding: 2%;
     padding-bottom: 3%;
     border-bottom: 1px solid white;
 }
 
-.one-project .skills .row {
+.projects-page .one-project .skills .row {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.one-project .skills p {
+.projects-page .one-project .skills p {
     color: #ABB2BF;
     padding: 1px 5px;
 }
 
-.one-project .desc {
+.projects-page .one-project .desc {
     padding: 5%;
 
     .title {
@@ -99,5 +103,34 @@
         color: #ABB2BF;
         font-size: 16px;
         margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .projects-page .projects > .row > a,
+    .projects-page .projects .hash {
+        font-size: 20px;
+    }
+
+    .projects-page .projects .pink-line {
+        width: 40%;
+    }
+
+    .projects-page .projects .all-projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-page .one-project {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .projects-page .projects .pink-line {
+        display: none;
     }
 }

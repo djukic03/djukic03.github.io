@@ -1,0 +1,65 @@
+.contact-page .page-title {
+    margin-bottom: 0;
+}
+
+.contact-section-page {
+    margin-top: 5%;
+}
+
+.contact-socials {
+    position: relative;
+    width: 40%;
+    height: 400px;
+}
+
+.contact-socials .social-card {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    width: 60%;
+    border: 1px solid #ABB2BF;
+    padding: 5%;
+}
+
+.contact-socials .social-card p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.social-icons-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons-row img {
+    width: 40px;
+}
+
+@media screen and (max-width: 850px) {
+    .contact-content-row {
+        flex-direction: column;
+    }
+
+    .contact-socials {
+        width: 100%;
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+    .contact-socials .social-card {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+    .social-icons-row {
+        justify-content: center;
+    }
+}

@@ -1,4 +1,4 @@
-.content {
+.home-page {
     .text {
         margin-right: 5%;
 
@@ -15,25 +15,25 @@
 }
 
 
-.content #hero .img {
+.home-page #hero .img {
     position: relative;
     width: 60%;
 }
 
-.content .img .picture {
+.home-page .img .picture {
     position: relative;
     z-index: 1;
     width: 100%;
 }
 
-.content .img .dots {
+.home-page .img .dots {
     position: absolute;
     top: 65%;
     right: 8%;
     z-index: 2;
 }
 
-.content .img .logo {
+.home-page .img .logo {
     position: absolute;
     top: 15%;
     left: 5%;
@@ -59,23 +59,9 @@
     margin: 8px;
 }
 
-.content .about-me {
+.home-page .about-me {
     position: relative;
     margin: 10% 0;
-}
-
-.content .about-me .row {
-    justify-content: flex-start;
-    margin-bottom: 25px;
-}
-
-.content .about-me .row p,
-a {
-    font-size: 35px;
-}
-
-.content .about-me .row a:hover {
-    color: white;
 }
 
 .about-me .about-me-text {
@@ -94,7 +80,7 @@ a {
     overflow: hidden;
 }
 
-.projects {
+.home-page .projects {
     position: relative;
 
     a:hover {
@@ -113,50 +99,54 @@ a {
     }
 }
 
+.home-page #projects-title .section-title {
+    margin-bottom: 0;
+}
+
 .view-all {
     font-size: 16px;
     margin-right: 2%;
     text-wrap: nowrap;
 }
 
-.projects #all-projects {
+.home-page .projects .all-projects {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 25px;
 }
 
-.one-project {
+.home-page .one-project {
     border: 1px solid white;
     width: 32%;
 }
 
-.one-project .img {
+.home-page .one-project .img {
     width: 100%;
 }
 
-.one-project .img img {
+.home-page .one-project .img img {
     width: 100%;
     border-bottom: 1px solid white;
 }
 
-.one-project .skills {
+.home-page .one-project .skills {
     padding: 2%;
     padding-bottom: 3%;
     border-bottom: 1px solid white;
 }
 
-.one-project .skills .row {
+.home-page .one-project .skills .row {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.one-project .skills p {
+.home-page .one-project .skills p {
     color: #ABB2BF;
     padding: 1px 5px;
 }
 
-.one-project .desc {
+.home-page .one-project .desc {
     padding: 5%;
 
     .title {
@@ -172,7 +162,7 @@ a {
     }
 }
 
-.projects .absolute {
+.home-page .projects .absolute {
     bottom: 30%;
     left: -17%;
 }
@@ -185,15 +175,15 @@ a {
 }
 
 @media screen and (max-width: 850px) {
-    .absolute {
+    .home-page .absolute {
         display: none;
     }
 
-    #hero {
+    .home-page #hero {
         margin-top: 130px;
     }
 
-    #hero .text {
+    .home-page #hero .text {
         margin-right: 0;
         text-align: center;
         width: 100%;
@@ -207,7 +197,7 @@ a {
         }
     }
 
-    .content #hero .img {
+    .home-page #hero .img {
         margin-top: 40px;
         width: 80%;
 
@@ -242,13 +232,8 @@ a {
         }
     }
 
-    .content .about-me {
+    .home-page .about-me {
         margin-top: 100px;
-    }
-
-    .content .about-me .row p,
-    a {
-        font-size: 20px;
     }
 
     .about-me .about-me-text {
@@ -260,11 +245,11 @@ a {
         font-size: 12px;
     }
 
-    .projects {
+    .home-page .projects {
         margin-top: 100px;
     }
 
-    .projects #projects-title {
+    .home-page .projects #projects-title {
 
         .pink-line {
             width: 40%;
@@ -279,7 +264,7 @@ a {
         }
     }
 
-    .projects #all-projects {
+    .home-page .projects .all-projects {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -292,7 +277,7 @@ a {
 }
 
 @media screen and (max-width: 450px) {
-    .projects #projects-title .pink-line {
+    .home-page .projects #projects-title .pink-line {
         display: none;
     }
 }
