@@ -100,7 +100,7 @@ export const translations = {
       documentTitle: "About | Nemanja Đukić",
       downloadCv: "Download_my_CV",
       experience: "experience",
-      education: "education",
+      education: "education and certificates",
     },
     projects: {
       pageTitle: "my_projects",
@@ -133,7 +133,7 @@ export const translations = {
         introEnd: "у Београду",
         description:
           "Ако тражите мотивисаног и посвећеног сарадника који жели да учи и професионално се развија, слободно ме контактирајте.",
-        cta: "Контактирај ме ->",
+        cta: "Контакт ->",
         currentlyWorking: "Тренутно радим на стицању",
         currentlyWorkingHighlight: "дипломе основних студија",
       },
@@ -168,11 +168,11 @@ export const translations = {
             },
           ],
         ],
-        readCv: "Прочитај мој CV ->",
+        readCv: "Мој CV ->",
       },
       projects: {
         title: "пројекти",
-        viewAll: "Погледај све ~~>",
+        viewAll: "Погледај све ->",
       },
       skills: {
         title: "вештине",
@@ -211,7 +211,7 @@ export const translations = {
       documentTitle: "О мени | Немања Ђукић",
       downloadCv: "Преузми_мој_CV",
       experience: "искуство",
-      education: "образовање",
+      education: "образовање и сертификати",
     },
     projects: {
       pageTitle: "моји_пројекти",

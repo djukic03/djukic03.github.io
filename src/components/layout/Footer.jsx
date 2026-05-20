@@ -31,7 +31,7 @@ export function Footer() {
         </div>
       </div>
       <p style={{ marginTop: "50px", color: "#ABB2BF" }}>
-        Copyright © 2024 {getLocalized(profile.name, language)}
+        Copyright  © 2024 {getLocalized(profile.name, language)}
       </p>
     </footer>
   );
