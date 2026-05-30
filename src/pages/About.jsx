@@ -3,7 +3,7 @@ import { TimelineSection } from "../components/ui/TimelineSection";
 import { useLanguage } from "../context/LanguageContext";
 import { icons } from "../data/assets";
 import { profile } from "../data/profile";
-import { educationItems, experienceItems } from "../data/timeline";
+import { certificateItems, educationItems, experienceItems } from "../data/timeline";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useIntersectionReveal } from "../hooks/useIntersectionReveal";
 
@@ -30,7 +30,8 @@ export function About() {
       </div>
 
       <TimelineSection title={t.about.experience} items={experienceItems} />
-      <TimelineSection title={t.about.education} items={educationItems} lineId="edu-line" />
+      <TimelineSection title={t.about.education} items={educationItems} />
+      <TimelineSection title={t.about.certificates} items={certificateItems} />
     </>
   );
 }

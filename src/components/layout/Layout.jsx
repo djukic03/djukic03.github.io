@@ -13,11 +13,13 @@ const pageClassNames = {
 export function Layout() {
   const { pathname } = useLocation();
   useScrollToTop();
+  const pageClassName =
+    pageClassNames[pathname] ?? (pathname.startsWith("/projects/") ? "project-detail-page" : "home-page");
 
   return (
     <>
       <Header />
-      <main className={`content ${pageClassNames[pathname] ?? "home-page"}`}>
+      <main className={`content ${pageClassName}`}>
         <Outlet />
       </main>
       <Footer />

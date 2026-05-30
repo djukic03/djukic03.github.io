@@ -3,6 +3,7 @@ import { Layout } from "./components/layout/Layout";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
+import { ProjectDetail } from "./pages/ProjectDetail";
 import { Projects } from "./pages/Projects";
 
 export function App() {
@@ -12,6 +13,7 @@ export function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="projects/:projectId" element={<ProjectDetail />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

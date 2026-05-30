@@ -24,10 +24,8 @@ export function ProjectCard({ project }) {
       <div className="desc">
         <p className="title">{getLocalized(project.title, language)}</p>
         <p className="desc-text">{getLocalized(project.description, language)}</p>
-        <Link to="/projects">
-          <button className="btn view-more" type="button">
-            {t.common.viewMore}
-          </button>
+        <Link className="btn view-more" to={`/projects/${project.id}`}>
+          {t.common.viewDetails}
         </Link>
       </div>
     </div>

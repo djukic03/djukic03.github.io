@@ -278,7 +278,7 @@
   }
 
   .home-page .one-project {
-    @apply w-[32%] border border-white;
+    @apply flex w-[32%] flex-col border border-white;
   }
 
   .one-project .img,
@@ -303,7 +303,7 @@
   }
 
   .one-project .desc {
-    @apply p-[5%];
+    @apply flex flex-1 flex-col p-[5%];
   }
 
   .one-project .desc .title {
@@ -311,7 +311,11 @@
   }
 
   .one-project .desc .desc-text {
-    @apply mb-[5px] text-base text-[#ABB2BF];
+    @apply mb-[25px] text-base text-[#ABB2BF];
+  }
+
+  .one-project .desc .view-more {
+    @apply mt-auto inline-flex w-auto items-center justify-center self-start px-4 text-nowrap;
   }
 
   .home-page .projects .absolute {
@@ -458,7 +462,7 @@
   }
 
   .cv .cv-download .btn {
-    @apply m-0 inline-flex h-[45px] w-full items-center justify-center text-[#ABB2BF];
+    @apply m-0 p-2 inline-flex h-[45px] w-full items-center justify-center text-[#ABB2BF];
   }
 
   .cv .cv-download img {
@@ -482,7 +486,9 @@
   }
 
   .exp-line-container {
-    @apply left-1/2 right-1/2 top-0 flex h-full flex-col items-center justify-start;
+    @apply left-1/2 right-1/2 flex flex-col items-center justify-start;
+    top: 0;
+    height: var(--timeline-line-height, 78%);
   }
 
   .exp-line-container .white-circle {
@@ -490,7 +496,7 @@
   }
 
   .exp-line {
-    @apply h-[78%] w-0.5 bg-[#C778DD];
+    @apply h-full w-0.5 bg-[#C778DD];
   }
 
   .left-experience,
@@ -559,10 +565,6 @@
     animation: scaleEffect 1s ease;
   }
 
-  #edu-line {
-    @apply h-[85%];
-  }
-
   .page-title-container {
     @apply mb-[6%];
   }
@@ -600,11 +602,94 @@
   }
 
   .projects-page .projects .all-projects {
-    @apply mt-[25px] flex-wrap items-start justify-start;
+    @apply mt-[25px] flex-wrap items-stretch justify-start;
   }
 
   .projects-page .one-project {
-    @apply mb-[15px] mr-[25px] w-[30%] border border-white;
+    @apply mb-[25px] mr-[25px] flex w-[30%] flex-col border border-white;
+  }
+
+  .back-to-projects {
+    @apply inline-block text-base text-[#ABB2BF];
+  }
+
+  .project-detail-hero {
+    @apply mt-[6%] grid grid-cols-[1fr_42%] items-center gap-[5%];
+  }
+
+  .project-detail-heading .page-title {
+    @apply my-0 mb-[25px];
+  }
+
+  .project-detail-heading .page-title .hash,
+  .project-detail-heading .page-title h1 {
+    @apply text-[35px];
+  }
+
+  .project-detail-summary {
+    @apply max-w-[720px] text-base leading-7 text-[#ABB2BF];
+  }
+
+  .project-detail-cover {
+    @apply overflow-hidden border border-white;
+  }
+
+  .project-detail-cover img {
+    @apply block aspect-video h-full w-full object-cover;
+  }
+
+  .project-detail-section {
+    @apply mt-[90px];
+  }
+
+  .project-detail-content {
+    @apply max-w-[900px];
+  }
+
+  .project-detail-content p {
+    @apply mb-5 text-base leading-7 text-[#ABB2BF];
+  }
+
+  .project-media-grid {
+    @apply grid grid-cols-2 gap-6;
+  }
+
+  .project-media-item {
+    @apply overflow-hidden border border-white;
+  }
+
+  .project-media-item img,
+  .project-media-item video {
+    @apply block aspect-video w-full object-cover;
+  }
+
+  .project-detail-bottom-grid {
+    @apply mb-[100px] grid grid-cols-2 gap-[8%];
+  }
+
+  .project-detail-bottom-grid-single {
+    @apply grid-cols-1;
+  }
+
+  .project-detail-tags {
+    @apply flex flex-wrap gap-3;
+  }
+
+  .project-detail-tags span {
+    @apply border border-[#ABB2BF] px-3 py-2 text-sm text-[#ABB2BF];
+  }
+
+  .project-detail-links {
+    @apply flex flex-col items-start gap-4;
+  }
+
+  .project-detail-link {
+    @apply inline-flex min-h-10 items-center border border-[#C778DD] px-5 text-sm font-bold text-white;
+  }
+
+  .project-detail-link:hover {
+    @apply bg-[#c778dd33] text-white;
+    transition: 0.5s;
   }
 
   .contact-page .page-title {
@@ -825,6 +910,46 @@
   .home-page .projects .all-projects .one-project,
   .projects-page .one-project {
     @apply mb-[50px] w-[80%];
+  }
+
+  .project-detail-hero {
+    @apply mt-[130px] grid-cols-1 gap-8 text-center;
+  }
+
+  .project-detail-heading .page-title {
+    @apply justify-center;
+  }
+
+  .project-detail-heading .page-title .hash,
+  .project-detail-heading .page-title h1 {
+    @apply text-xl;
+  }
+
+  .project-detail-summary,
+  .project-detail-content p {
+    @apply text-xs leading-6;
+  }
+
+  .project-detail-cover {
+    @apply mx-auto w-full max-w-[520px];
+  }
+
+  .project-detail-section {
+    @apply mt-[70px];
+  }
+
+  .project-media-grid,
+  .project-detail-bottom-grid {
+    @apply grid-cols-1;
+  }
+
+  .project-detail-bottom-grid {
+    @apply gap-12;
+  }
+
+  .project-detail-tags,
+  .project-detail-links {
+    @apply justify-center;
   }
 
   .skills-section .animation {

@@ -1,5 +1,7 @@
 export const images = {
   athleteX: new URL("../../assets/img/athlete-x.png", import.meta.url).href,
+  birthdayCard: new URL("../../assets/img/birthday-card.png", import.meta.url).href,
+  canepanion: new URL("../../assets/img/canepanion.png", import.meta.url).href,
   carSalesTracker: new URL("../../assets/img/car-sales-tracker.png", import.meta.url).href,
   chatApp: new URL("../../assets/img/chat-app.png", import.meta.url).href,
   djukaMusicAssistant: new URL("../../assets/img/DjukaMusicAssistant.png", import.meta.url).href,

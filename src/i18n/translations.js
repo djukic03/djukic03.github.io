@@ -9,6 +9,7 @@ export const translations = {
     common: {
       media: "Media",
       viewMore: "View More ->",
+      viewDetails: "View Details ->",
       footerText: "IT student and a full-stack developer",
       siteTitle: "Nemanja Đukić",
     },
@@ -100,7 +101,8 @@ export const translations = {
       documentTitle: "About | Nemanja Đukić",
       downloadCv: "Download_my_CV",
       experience: "experience",
-      education: "education and certificates",
+      education: "education",
+      certificates: "certificates",
     },
     projects: {
       pageTitle: "my_projects",
@@ -108,6 +110,13 @@ export const translations = {
       pageDesc: "List of my projects",
       academicProjects: "academic_projects",
       personalProjects: "personal_projects",
+      backToProjects: "<- Back to projects",
+      overview: "overview",
+      mediaSection: "media",
+      links: "links",
+      techStack: "tech_stack",
+      githubRepository: "GitHub repository",
+      liveDemo: "Live demo",
     },
   },
   sr: {
@@ -120,6 +129,7 @@ export const translations = {
     common: {
       media: "Медији",
       viewMore: "Погледај више ->",
+      viewDetails: "Погледај детаље ->",
       footerText: "ИТ студент и фул-стек програмер",
       siteTitle: "Немања Ђукић",
     },
@@ -211,7 +221,8 @@ export const translations = {
       documentTitle: "О мени | Немања Ђукић",
       downloadCv: "Преузми_мој_CV",
       experience: "искуство",
-      education: "образовање и сертификати",
+      education: "образовање",
+      certificates: "сертификати",
     },
     projects: {
       pageTitle: "моји_пројекти",
@@ -219,6 +230,13 @@ export const translations = {
       pageDesc: "Листа мојих пројеката",
       academicProjects: "академски_пројекти",
       personalProjects: "лични_пројекти",
+      backToProjects: "<- Назад на пројекте",
+      overview: "преглед",
+      mediaSection: "медији",
+      links: "линкови",
+      techStack: "технологије",
+      githubRepository: "GitHub репозиторијум",
+      liveDemo: "Live demo",
     },
   },
 };

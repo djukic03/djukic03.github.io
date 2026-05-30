@@ -1,44 +1,30 @@
 export const experienceItems = [
   {
     eyebrow: {
-      en: "Personal project",
-      sr: "Лични пројекат",
+      en: "University of Belgrade, Faculty of Organizational Sciences",
+      sr: "Универзитет у Београду, Факултет организационих наука",
     },
     title: {
-      en: "Portfolio website",
-      sr: "Портфолио веб-сајт",
+      en: "Technical Committee Member - SymOrg26",
+      sr: "Члан техничког одбора - SymOrg26",
     },
     date: {
-      en: "Aug 2024 - Sep 2024",
-      sr: "Авг 2024 - сеп 2024",
+      en: "Apr 2026 - Jun 2026",
+      sr: "Апр 2026 - Јун 2026",
     },
   },
   {
     eyebrow: {
-      en: "Academic project",
-      sr: "Академски пројекат",
+      en: "Faculty of Organizational Sciences, Department for E-Business",
+      sr: "Универзитет у Београду, Факултет организационих наука, Катедра за електронско пословање",
     },
     title: {
-      en: "Fitness tracker web app",
-      sr: "Веб апликација за праћење фитнес активности",
+      en: "Undergraduate Teaching Associate",
+      sr: "Сарадник у настави на основним студијама",
     },
     date: {
-      en: "Jul 2024 - Aug 2024",
-      sr: "Јул 2024 - авг 2024",
-    },
-  },
-  {
-    eyebrow: {
-      en: "Academic project",
-      sr: "Академски пројекат",
-    },
-    title: {
-      en: "Voice-controlled music player",
-      sr: "Музички плејер са гласовним командама",
-    },
-    date: {
-      en: "Dec 2022 - Feb 2023",
-      sr: "Дец 2022 - феб 2023",
+      en: "Nov 2025 - Present",
+      sr: "Нов 2025 - Данас",
     },
   },
 ];
@@ -55,35 +41,7 @@ export const educationItems = [
     },
     date: {
       en: "Oct 2022 - Present",
-      sr: "Окт 2022 - данас",
-    },
-  },
-  {
-    eyebrow: {
-      en: "Extracurricular activity",
-      sr: "Ваннаставна активност",
-    },
-    title: {
-      en: "ELAB Summer School - Product Management course",
-      sr: "ELAB летња школа - курс управљања производом",
-    },
-    date: {
-      en: "Sep 2024",
-      sr: "Сеп 2024",
-    },
-  },
-  {
-    eyebrow: {
-      en: "Extracurricular activity",
-      sr: "Ваннаставна активност",
-    },
-    title: {
-      en: "Advanced Java course",
-      sr: "Напредни Java курс",
-    },
-    date: {
-      en: "Feb 2024 - Jun 2024",
-      sr: "Феб 2024 - јун 2024",
+      sr: "Окт 2022 - Данас",
     },
   },
   {
@@ -97,7 +55,66 @@ export const educationItems = [
     },
     date: {
       en: "Sep 2018 - Jun 2022",
-      sr: "Сеп 2018 - јун 2022",
+      sr: "Сеп 2018 - Јун 2022",
+    },
+  },
+];
+
+export const certificateItems = [
+  {
+    eyebrow: {
+      en: "Faculty of Organizational Sciences, Department for E-Business",
+      sr: "Факултет организационих наука, Катедра за електронско пословање",
+    },
+    title: {
+      en: "Bootcamp 2026 - Blockchain Development",
+      sr: "Bootcamp 2026 - Blockchain Development",
+    },
+    date: {
+      en: "Feb 2026 - Mar 2026",
+      sr: "Феб 2026 - Мар 2026",
+    },
+  },
+  {
+    eyebrow: {
+      en: "Faculty of Organizational Sciences and CodeIT",
+      sr: "Факултет организационих наука и CodeIT",
+    },
+    title: {
+      en: "VibeCode the Future Lovable Bootcamp",
+      sr: "VibeCode the Future Lovable Bootcamp",
+    },
+    date: {
+      en: "Nov 2025 - Dec 2025",
+      sr: "Нов 2025 - Дец 2025",
+    },
+  },
+  {
+    eyebrow: {
+      en: "Faculty of Organizational Sciences, Department for E-Business",
+      sr: "Факултет организационих наука, Катедра за електронско пословање",
+    },
+    title: {
+      en: "ELAB Summer School - Product Management course",
+      sr: "ELAB летња школа - курс управљања производом",
+    },
+    date: {
+      en: "Sep 2024 - Oct 2024",
+      sr: "Сеп 2024 - Окт 2024",
+    },
+  },
+  {
+    eyebrow: {
+      en: "Faculty of Organizational Sciences, Software Engineering Department",
+      sr: "Факултет организационих наука, Катедра за софтверско инжењерство",
+    },
+    title: {
+      en: "Advanced Java course",
+      sr: "Напредни Java курс",
+    },
+    date: {
+      en: "Feb 2024 - Jun 2024",
+      sr: "Феб 2024 - Јун 2024",
     },
   },
 ];
